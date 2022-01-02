@@ -4,9 +4,9 @@ import SteelaQueenBot.modules.sql.blacklistusers_sql as sql
 from SteelaQueenBot import (DEV_USERS, OWNER_ID, DRAGONS, DEMONS, TIGERS, WOLVES,
                           dispatcher)
 from SteelaQueenBot.modules.helper_funcs.chat_status import dev_plus
-from ZeusXRobot.modules.helper_funcs.extraction import (extract_user,
+from SteelaQueenBot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from ZeusXRobot.modules.log_channel import gloggable
+from SteelaQueenBot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
