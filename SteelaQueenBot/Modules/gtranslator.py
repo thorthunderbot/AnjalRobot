@@ -9,9 +9,9 @@ from telegram import (
     InlineKeyboardMarkup,
     InlineKeyboardButton,
 )
-from ZeusXRobot import dispatcher, pgram
+from SteelaQueenBot import dispatcher, pgram
 from pyrogram import filters
-from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from SteelaQueenBot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import run_async
 
 
