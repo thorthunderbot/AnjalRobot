@@ -92,7 +92,7 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ ADD ME ☑️",
+                            text="ADD ME TO YOUR GROUP",
                             url="t.me/Steelaqueenbot?startgroup=true"),
                     ],
                    [
@@ -411,7 +411,7 @@ def zeus_data_callback(update, context):
         )
     
     
-    elif query.data == "zeus_info":
+    elif query.data == "Steela_info":
         botuptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
