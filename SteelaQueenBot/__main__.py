@@ -79,27 +79,24 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
-
-*Hello User!!*
-𝐇𝐞𝐲 𝐈'𝐦 [๖ۣۜZΞUS༻](https://en.m.wikipedia.org/wiki/Zeus),👋
-𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 
-𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐈 𝐖𝐢𝐥𝐥 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫...
+𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟SteelaQueen](https://telegra.ph/file/434967e94c3dda08b34ac.jpg)
+𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐮𝐧 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬!  𝐇𝐢𝐭 /help
+✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
 STICKERS = (
       "CAACAgUAAxkDAAIU9mHSSH9HTdnHdtm34bCYQum8bHrPAAKqBQACR2uRVoOaSAEbT1QxIwQ", #1
-      "", #2
+      "CAACAgUAAxkDAAIU_WHSSL7f9Jq22jL87cH4lIc34_BLAAKrBQACR2uRVsy3UeQJKpCjIwQ", #2
 )
 
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT GOD ZEUS ☑️",
-                            url="t.me/ZeusXRobot?startgroup=true"),
+                            text="☑️ ADD ME ☑️",
+                            url="t.me/Steelaqueenbot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="🤖 Stats", callback_data="zeus_info"),
+                       InlineKeyboardButton(text="My Repo", url="https://github.com/godofanjal/SteelaQueenBot"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
@@ -108,7 +105,7 @@ buttons = [
                              text="👫 Freedom",
                              url=f"https://t.me/UnitedSupport"),
                        InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
+                             text="⚡Updates",
                              url=f"https://t.me/{UPDATES_CHANNEL}"),
                      ],
                     [
@@ -124,8 +121,8 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @UnitedSupport.
+All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/a989d18c815397f11f84b.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -134,7 +131,7 @@ List of all the Modules:
 
 HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """t.me/unitedsupport"""
-HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
+HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
 
 
 IMPORTED = {}
@@ -249,7 +246,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
+            "*hello! {},*\n*Steela here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
