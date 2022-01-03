@@ -118,7 +118,7 @@ if ENV:
             "Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from ZeusXRobot.config import Development as Config
+    from SteelaQueenBot.config import Development as Config
     TOKEN = Config.TOKEN
 
     try:
@@ -207,8 +207,8 @@ else:
 aiohttpsession = ClientSession()
 arq = (ARQ_API_URL, ARQ_API_KEY, aiohttpsession)
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Zeus", API_ID, API_HASH)
-pgram = Client("ZeusXRobot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+telethn = TelegramClient("Steela", API_ID, API_HASH)
+pgram = Client("SteelaQueenBot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
@@ -218,7 +218,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from ZeusXRobot.modules.helper_funcs.handlers import (CustomCommandHandler,
+from SteelaQueenBot.modules.helper_funcs.handlers import (CustomCommandHandler,
                                                         CustomMessageHandler,
                                                         CustomRegexHandler)
 
