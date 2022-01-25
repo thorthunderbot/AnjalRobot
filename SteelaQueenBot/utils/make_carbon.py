@@ -12,7 +12,7 @@ import aiofiles
 import speedtest
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 from pyrogram.types import Message
-from ZeusXRobot import aiohttpsession as aiosession
+from SteelaQueenBot import aiohttpsession as aiosession
 
 
 
