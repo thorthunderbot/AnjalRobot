@@ -10,7 +10,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import escape_markdown
 
-import SteelaQueenBot.modules.fun_strings as fun
+import SteelaQueenBot.modules.fun_string as fun
 from SteelaQueenBot import DEMONS, DRAGONS, dispatcher
 from SteelaQueenBot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
 from SteelaQueenBot.modules.helper_funcs.alternate import typing_action
