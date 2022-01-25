@@ -84,10 +84,6 @@ PM_START_TEXT = """
 ✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
-STICKERS = (
-      "CAACAgUAAxkDAAIU9mHSSH9HTdnHdtm34bCYQum8bHrPAAKqBQACR2uRVoOaSAEbT1QxIwQ", #1
-      "CAACAgUAAxkDAAIU_WHSSL7f9Jq22jL87cH4lIc34_BLAAKrBQACR2uRVsy3UeQJKpCjIwQ", #2
-)
 
 buttons = [
     [
@@ -133,6 +129,10 @@ HELP_MSG = "Click the button below to get help manu in your pm."
 DONATE_STRING = """t.me/unitedsupport"""
 HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
 
+STICKERS = (
+      "CAACAgUAAxkDAAIU9mHSSH9HTdnHdtm34bCYQum8bHrPAAKqBQACR2uRVoOaSAEbT1QxIwQ", #1
+      "CAACAgUAAxkDAAIU_WHSSL7f9Jq22jL87cH4lIc34_BLAAKrBQACR2uRVsy3UeQJKpCjIwQ", #2
+)
 
 IMPORTED = {}
 MIGRATEABLE = []
