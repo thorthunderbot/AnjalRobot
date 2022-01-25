@@ -35,7 +35,7 @@ class Config(object):
     SPAMWATCH_API = "yanOAsklE5nhYnILw7M~dHLnRazZQcPXfo818_UhkvEIA6yLD4cmYH1PkM1v7SM3"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     BOT_USERNAME = "SteelaQueenBot"
-    BOT_ID = "1891633746"
+    BOT_ID = "5013305214"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
 
