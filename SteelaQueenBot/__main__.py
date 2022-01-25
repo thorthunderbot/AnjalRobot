@@ -145,7 +145,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("ZeusXRobot.modules." + module_name)
+    imported_module = importlib.import_module("SteelaQueenBot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -386,9 +386,9 @@ def help_button(update, context):
 
 
 
-def zeus_data_callback(update, context):
+def Steela_data_callback(update, context):
     query = update.callback_query
-    if query.data == "zeus_":
+    if query.data == "Steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -396,12 +396,12 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="zeus_back")
+                    InlineKeyboardButton(text="Back", callback_data="Steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "zeus_back":
+    elif query.data == "Steela_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -424,7 +424,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
+                    InlineKeyboardButton(text="⬅ Back", callback_data="Steela_back"),
                  
                  ]
                 ]
@@ -726,7 +726,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(zeus_data_callback, pattern=r"zeus_")
+    data_callback_handler = CallbackQueryHandler(Steela_data_callback, pattern=r"Steela_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
