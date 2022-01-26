@@ -10,7 +10,7 @@ from pyrogram.errors.exceptions.bad_request_400 import (
 )
 from pyrogram.types import ChatPermissions, InlineKeyboardButton, InlineKeyboardMarkup
 
-from SteelaQueenBot import DRAGONS as SUDO_USERS
+from SteelaQueenBot import DRAGONS as sudos
 from SteelaQueenBot import pgram
 from SteelaQueenBot.modules.sql import fsub_sql as sql
 
