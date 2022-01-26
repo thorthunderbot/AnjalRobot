@@ -129,6 +129,7 @@ STICKERS = ( "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_r
 "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", ) 
 
 
+
 IMPORTED = {}
 MIGRATEABLE = []
 HELPABLE = {}
@@ -246,6 +247,7 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
   
+
    
           
 
