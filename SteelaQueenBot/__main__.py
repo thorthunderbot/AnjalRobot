@@ -236,9 +236,8 @@ def start(update: Update, context: CallbackContext):
         else:
             update.effective_message.reply_sticker(
                 random.choice(STICKERS),
-                timeout=60,
-            )
-            first_name = update.effective_user.first_name
+                timeout=60, 
+                ) 
             update.effective_message.reply_text(
                 PM_START_TEXT,                
                 reply_markup=InlineKeyboardMarkup(buttons),
