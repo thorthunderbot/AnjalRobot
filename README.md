@@ -1,53 +1,56 @@
-
-<h1 align="center"><b>⚡ Anjal ⚡</b></h1>
-
-<h4 align="center">A Advanced Powerful, Smart And Intelligent Group Management Bot With New And Powerful Features <br> ... Written with Pyrogram and Telethon...</h4>
-<p align='center'>
-  <a href="https://www.python.org/" alt="made-with-python"> <img src="https://img.shields.io/badge/Made%20with-Python-1f425f.svg?style=flat-square&logo=python&color=blue" /> </a>
-  <a href="https://github.com/godofanjal/AnjalRobot/graphs/commit-activity" alt="Maintenance"> <img src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=flat-square" /> </a>
+<p align="center">
+  <img src="https://telegra.ph//file/1676d21f8b22e8d21a80a.jpg">
 </p>
 
-<p align="center"><a href="https://t.me/SerenaYvonneRobot"><img src="https://telegra.ph/file/402e0fb3e3ac89df1dcc4.jpg" width="400"></a></p>
+<h4><p align="center"> AnjalRobot </p></h4>
 
+<p align="center">AnjalRobot is a modular bot running on python3 with anime theme and have a lot features.</p>
 
 <p align="center">
-    <a href="https://github.com/godofanjal/AnjalRobot"> <img src="https://img.shields.io/github/repo-size/godofanjal/AnjalRobot?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/godofanjal/AnjalRobot/commits/prince"> <img src="https://img.shields.io/github/last-commit/godofanjal/AnjalRobot?color=brown&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/godofanjal/godofanjal/issues"> <img src="https://img.shields.io/github/issues/godofanjal/AnjalRobot?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a>
+<a href="https://t.me/AnjalRobot"> <img src="https://img.shields.io/badge/Anjal-blue?&logo=telegram" alt="Anjal on Telegram" /> </a><br>
+<a href="https://python-telegram-bot.org"> <img src="https://img.shields.io/badge/PTB-13.10-white?&style=flat-round&logo=github" alt="Python Telegram Bot" /> </a>
+<a href="https://github.com/psf/black"><img alt="Code style: black" src="https://img.shields.io/badge/code%20style-black-000000.svg"></a><br>
+<a href="https://docs.telethon.dev"> <img src="https://img.shields.io/badge/Telethon-1.24.0-red?&style=flat-round&logo=github" alt="Telethon" /> </a>
+<a href="https://docs.python.org"> <img src="https://img.shields.io/badge/Python-3.10.1-purple?&style=flat-round&logo=python" alt="Python" /> </a><br>
+<a href="https://github.com/GodOfanjal/AnjalRobot"> <img src="https://img.shields.io/badge/Maintained-Yash-yellow.svg" alt="Maintenance" /> </a><br>
+<a href="https://github.com/GodOfanjal/AnjalRobot/blob/main/LICENSE"> <img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License" /> </a>
+<a href="https://makeapullrequest.com"> <img src="https://img.shields.io/badge/PRs-Welcome-blue.svg?style=flat-round" alt="PRs" /> </a>
 </p>
 
-
-Your star's my motivation 😞 Going to fork hit a star 😊 | thanks for supports.
-
-## Available on Telegram as [AnjalRobot](https://t.me/AnjalRobot)
 
 ## ✨ Deploy to Heroku ✨
 
 ᴄʟɪᴄᴋ ᴛᴏ ᴅᴇᴘʟᴏʏ sᴄʀᴇᴇɴ ᴏғ ʜᴇʀᴏᴋᴜ ғɪʟʟ ᴀ ᴠᴀʀs ɴᴏᴡ ʙᴏᴛ ʀᴜɴs ʜᴇʀᴏᴋᴜ!
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/godofanjal/AnjalRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/GodOfanjal/AnjalRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku"width="220"height="38.45"/></a></p>
+
 
 ## ✨ Deploy to Railway ✨
 
-## Edit A AnjalRobot/Config.py in
+## Edit A Steela/Config.py in
 - `OWNER_ID`|`OWNER_USERNAME`
 - `API_ID`| `API_HARISH`|
-- `TOKEN`| ɴᴏᴡ ʙᴏᴛ ʀᴜɴs ʀᴀɪʟᴡᴀʏ!
+- `TOKEN`| NOW BOT RUNS RAILWAY!
 - FORK ON DEPLOY
 
    [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
 
-## `SQLALCHEMY_DATABASE_URI` | ᴍᴏsᴛ ᴜsᴇ ᴏʟᴅ `ᴅʙ_ᴜʀʟ`
+## `SQLALCHEMY_DATABASE_URI` | MOST USE OLD`DB_URL`
 
 
 ## Special Credits
-- ZeusXRobot - module
+- ZeusXRoBot - base
+- Kurumibot - base
+- Image-Editorbot - module
 
 
-## REPO MADE BY [Crazy Boy](t.me/call_me_crazyboy) | `ᴏᴡɴᴇʀ`
+### Support
+<p>
+<a href="https://t.me/AnjalRobot"> <img src="https://img.shields.io/badge/Telegram-RoBot-blue?&logo=telegram" alt="Telegram RoBot" /> </a><br>
+<a href="https://t.me/NobisukiSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
+<a href="https://t.me/UnitedSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
+</p>
 
+## Credit 
 
-# 🗡️ Join our Support & Updates
-<a href="https://t.me/NobisukiSupport"><img src="https://img.shields.io/badge/Support 🎉-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="https://t.me/PegasusUpdates"><img src="https://img.shields.io/badge/Updates 💥-Telegram%20Group-blue.svg?logo=telegram"></a>
+• [DeepakJack](https://github.com/DeepakJack007)``Dev``
