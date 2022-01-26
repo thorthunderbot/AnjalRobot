@@ -6,7 +6,7 @@ from telethon import Button
 from telethon import events
 from telethon.tl.types import ChannelParticipantsAdmins
 
-from ZeusXRobot import telethn
+from SteelaQueenBot import telethn
 
 @telethn.on(events.NewMessage(pattern="^/tagall|@all?(.*)"))
 async def mentionall(event):
