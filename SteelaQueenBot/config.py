@@ -19,13 +19,13 @@ class Config(object):
     API_HASH = "2d27353eb16c951fe96fc2b97f2b47d0"
     TOKEN = "2021201316:AAFhIV9r6j56ssR6NLbL0RGfmpC8kyZH-Wk"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 1891633746  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "cRaZyBoY_420"
-    SUPPORT_CHAT = 'UnitedSupport'  #Your own group for support, do not add the @
+    OWNER_USERNAME = "call_me_crazyboy"
+    SUPPORT_CHAT = 'NobisukiSupport'  #Your own group for support, do not add the @
     UPDATES_CHANNEL = 'PegasusUpdates' #Your own channel for Updates of bot, Do not add @
-    JOIN_LOGGER = -1001574034400  #Prints any new group the bot is added to, prints just the name and ID.
+    JOIN_LOGGER = -1001666190681  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "http://removebg.com"
     TEMP_DOWNLOAD_DIRECTORY = ""
-    EVENT_LOGS = -1001574034400  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    EVENT_LOGS = -1001666190681  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     SQLALCHEMY_DATABASE_URI = 'postgres://waumvqwb:WCE7AAwcaLwHpUI9VPeA78rMAWPv5IyT@abul.db.elephantsql.com/waumvqwb' #do you hub your old heroku app database_URL then put here, most use 25days ago sql
     LOAD = [] #try to kang this db ur big mothersfuckers i know your noob so only kanging my db
     NO_LOAD = ['rss', 'cleaner', 'math']
@@ -34,8 +34,8 @@ class Config(object):
     URL = None
     SPAMWATCH_API = "yanOAsklE5nhYnILw7M~dHLnRazZQcPXfo818_UhkvEIA6yLD4cmYH1PkM1v7SM3"  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    BOT_USERNAME = "SteelaQueenBot"
-    BOT_ID = "5013305214"
+    BOT_USERNAME = "AnjalRoBot"
+    BOT_ID = "2021201316"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
 
