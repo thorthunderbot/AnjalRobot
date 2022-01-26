@@ -29,10 +29,10 @@
 ## Edit A Steela/Config.py in
 - `OWNER_ID`|`OWNER_USERNAME`
 - `API_ID`| `API_HARISH`|
-- `TOKEN`| NOW BOT RAILWAY!
+- `TOKEN`| NOW BOT RUNS RAILWAY!
 - FORK ON DEPLOY
 
    [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
 
-## `SQLALCHEMY_DATABASE_URI` | MOST Ot`DB_URL`
+## `SQLALCHEMY_DATABASE_URI` | MOST USE OLD`DB_URL`
