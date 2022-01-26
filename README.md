@@ -26,7 +26,7 @@
 
 ## ✨ Deploy to Railway ✨
 
-## Edit A Steela/Config.py in
+## Edit A SteelaQueenBot/Config.py in
 - `OWNER_ID`|`OWNER_USERNAME`
 - `API_ID`| `API_HARISH`|
 - `TOKEN`| NOW BOT RUNS RAILWAY!
