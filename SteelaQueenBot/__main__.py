@@ -4,7 +4,7 @@ import random
 import re
 from sys import argv
 from typing import Optional
-from platform import python_version #ZeusXRobot
+from platform import python_version #SteelaQueenBot
 
 from SteelaQueenBot import (
     ALLOW_EXCL,
@@ -24,10 +24,10 @@ from SteelaQueenBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from ZeusXRobot.modules import ALL_MODULES
-from ZeusXRobot.modules.helper_funcs.chat_status import is_user_admin
-from ZeusXRobot.modules.helper_funcs.misc import paginate_modules
-from ZeusXRobot.modules.disable import DisableAbleCommandHandler
+from SteelaQueenBot.modules import ALL_MODULES
+from SteelaQueenBot.modules.helper_funcs.chat_status import is_user_admin
+from SteelaQueenBot.modules.helper_funcs.misc import paginate_modules
+from SteelaQueenBot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
 from telegram.error import (
     BadRequest,
@@ -79,12 +79,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
-
-*Hello User!!*
-𝐇𝐞𝐲 𝐈'𝐦 [๖ۣۜZΞUS༻](https://en.m.wikipedia.org/wiki/Zeus),👋
-𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 
-𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐈 𝐖𝐢𝐥𝐥 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫...
+𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟SteelaQueen](https://telegra.ph/file/434967e94c3dda08b34ac.jpg)
+𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬!  𝐇𝐢𝐭 /help
+✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
 STICKERS = (
@@ -95,20 +92,20 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT GOD ZEUS ☑️",
-                            url="t.me/ZeusXRobot?startgroup=true"),
+                            text="༒︎ ADD ANJAL TO YOUR GROUP ༒︎",
+                            url="t.me/AnjalRobot?startgroup=true"),
                     ],
                    [
-                       InlineKeyboardButton(text="🤖 Stats", callback_data="zeus_info"),
+                       InlineKeyboardButton(text="🤖 Source", url=" https://github.com/godofanjal/AnjalRobot"),
                        InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
                      ],
                     [                  
                        InlineKeyboardButton(
-                             text="👫 Freedom",
-                             url=f"https://t.me/UnitedSupport"),
+                             text="👥 Support",
+                             url=f"https://t.me/NobisukiSupport"),
                        InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
+                             text="📢 Updates",
                              url=f"https://t.me/{UPDATES_CHANNEL}"),
                      ],
                     [
@@ -133,8 +130,8 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """t.me/unitedsupport"""
-HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
+DONATE_STRING = """You can donate by contacting my owner here: @attitudeking420"""
+HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
 
 
 IMPORTED = {}
@@ -148,7 +145,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("ZeusXRobot.modules." + module_name)
+    imported_module = importlib.import_module("SteelaQuzeuot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -249,7 +246,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
+            "*hello! {},*\n*Steela here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
@@ -336,7 +333,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Powered By @PegasusXteam*\n *Module Name:*`{}`\n".format(
+                "*Module Name:*`{}`\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -347,7 +344,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="zeus_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
                 ),
             )
 
@@ -391,7 +388,7 @@ def help_button(update, context):
 
 def zeus_data_callback(update, context):
     query = update.callback_query
-    if query.data == "zeus_":
+    if query.data == "steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -399,12 +396,12 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="zeus_back")
+                    InlineKeyboardButton(text="Back", callback_data="steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "zeus_back":
+    elif query.data == "steela_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -414,7 +411,7 @@ def zeus_data_callback(update, context):
         )
     
     
-    elif query.data == "zeus_info":
+    elif query.data == "steela_info":
         botuptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
@@ -427,7 +424,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
+                    InlineKeyboardButton(text="⬅ Back", callback_data="steela_back"),
                  
                  ]
                 ]
@@ -712,7 +709,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","*Zeus Is Ready ⚡*", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","*Anjal Is Alive ⚡*", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
