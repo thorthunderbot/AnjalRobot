@@ -38,7 +38,7 @@
 ## `SQLALCHEMY_DATABASE_URI` | MOST USE OLD`DB_URL`
 
 
-##Special Credits
+###Special Credits
 - ZeusXRoBot - base
 - Kurumibot - base
 - Image-Editorbot - module
