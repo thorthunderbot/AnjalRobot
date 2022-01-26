@@ -122,11 +122,11 @@ List of all the Modules
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATION_STRING = """You can donate by contacting my owner here: @call_me_crazyboy"""
+DONATE_STRING = """You can donate by contacting my owner here: @call_me_crazyboy"""
 HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
     
-STICKERS = ( "CAACAgUAAxkBAAIBwmG1oJ9SYkpvwQ3kDQ1mE3SYMiIzAAKOBAACHKGxVc0_w0NILe98IwQ", 
-"CAACAgUAAxkBAAIBwGG1oJ0dhgu9NeqghdzMcnyR_7HNAAJ4BAAC9iyoVcDiQRsJkJxMIwQ", ) 
+STICKERS = ( "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", 
+"CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", ) 
 
 
 IMPORTED = {}
@@ -259,8 +259,8 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/shukurenai007"),
+                  InlineKeyboardButton(text="Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text="Updates ", url=f"t.me/Pegasusupdate"),
                   ]
                 ]
             ),
@@ -350,7 +350,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="AliceZuberg_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
                 ),
             )
 
@@ -394,7 +394,7 @@ def help_button(update, context):
 
 def Steela_data_callback(update, context):
     query = update.callback_query
-    if query.data == "Steela_":
+    if query.data == "steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -402,12 +402,12 @@ def Steela_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="Steela_back")
+                    InlineKeyboardButton(text="Back", callback_data="steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "Steela_back":
+    elif query.data == "steela_back":
         query.message.edit_text(
                 PM_START_TEXT, 
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -416,41 +416,41 @@ def Steela_data_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "Steela_info":
+    elif query.data == "steela_info":
         query.message.edit_text(
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
             f"\n• Powerfull Telegram group Management Bot\n"
-            f"\n• Than send `/admincache@AliceZubergRoBot` in that chat to refresh admin list in My database.\n"
-            f"\n\n*All done now use below given button's to know about [use!](https://telegra.ph/file/a5ec90fed4b7de860193a.jpg)*\n"
+            f"\n• Than send `/admincache@Anjalrobot` in that chat to refresh admin list in My database.\n"
+            f"\n\n*All done now use below given button's to know about [use!](https://telegra.ph/file/a989d18c815397f11f84b.jpg)*\n"
             f"",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="admin 👮‍♂️", callback_data="AliceZuberg_admin"),
-                    InlineKeyboardButton(text="notes 📋", callback_data="AliceZuberg_notes"),
+                    InlineKeyboardButton(text="admin 👮‍♂️", callback_data="steela_admin"),
+                    InlineKeyboardButton(text="notes 📋", callback_data="steela_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="support 👥", callback_data="AliceZuberg_support"),
-                    InlineKeyboardButton(text="credit 👨🏻‍💻", callback_data="AliceZuberg_credit"),
+                    InlineKeyboardButton(text="support 👥", callback_data="steela_support"),
+                    InlineKeyboardButton(text="credit 👨🏻‍💻", callback_data="steela_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Inline ↗️", switch_inline_query_current_chat=""),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="AliceZuberg_back"),
+                    InlineKeyboardButton(text="Back", callback_data="steela_back"),
                  
                  ]
                 ]
             ),
         )
 
-    elif query.data == "Steela_admin":
+    elif query.data == "steela_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
-            f"\nCongragulations, AliceZubergRoBot now ready to manage your group."
+            f"\nCongragulations, AnjalRoBot now ready to manage your group."
             f"\n\n*Admin Tools*"
             f"\nBasic Admin tools help you to protect and powerup your group."
             f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -460,11 +460,11 @@ def Steela_data_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="AliceZuberg_info")]]
+                [[InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="steela_info")]]
             ),
         )
 
-    elif query.data == "Steela_notes":
+    elif query.data == "steela_notes":
         query.message.edit_text(
             text=f"<b> Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -472,13 +472,13 @@ def Steela_data_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text= "⬅️ 𝗕𝗔𝗖𝗞", callback_data="AliceZuberg_info")]]
+                [[InlineKeyboardButton(text= "⬅️ 𝗕𝗔𝗖𝗞", callback_data="steela_info")]]
             ),
         )
         
-    elif query.data == "Steela_support":
+    elif query.data == "steela_support":
         query.message.edit_text(
-            text="* AliceZubergRoBot support chats*"
+            text="* AnjalRoBot support chats*"
             "\nJoin Support Group/Channel",
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
@@ -487,15 +487,15 @@ def Steela_data_callback(update, context):
                     InlineKeyboardButton(text="𝗟𝗢𝗚'ꜱ 😎", url="https://t.me/pegasuslogs"),
                  ],
                  [
-                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/AliceZubergSupport"),
+                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/nobisukiSupport"),
                  ], 
                 ]
             ),
         )
         
-    elif query.data == "Steela_credit":
+    elif query.data == "steela_credit":
         query.message.edit_text(
-            text=f"<b> CREDIT FOR AliceZubergRoBot DEV'S</b>\n"
+            text=f"<b> CREDIT FOR AnjalRoBot DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The AliceZubergRoBot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
@@ -752,7 +752,7 @@ def donate(update: Update, context: CallbackContext):
             )
 
             update.effective_message.reply_text(
-                "I've PM'ed you about donating to my creator!"
+                "Pm me i can sent about donating to my creator!"
             )
         except Unauthorized:
             update.effective_message.reply_text(
