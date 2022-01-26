@@ -230,7 +230,7 @@ def start(update: Update, context: CallbackContext):
 
     else:
         update.effective_message.reply_video(
-            caption= "<code>Anjal Here For You🖤\nI'm Working :</code>: <code>{}</code>".format(
+            "<code>Anjal Here For You🖤\nI'm Working :</code>: <code>{}</code>".format(
                 uptime
             ),
             parse_mode=ParseMode.HTML,
