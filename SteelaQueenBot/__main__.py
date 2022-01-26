@@ -228,8 +228,6 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
             )
 
-
-
     else:
         update.effective_message.reply_video(
             caption= "<code>Anjal Here For You🖤\nI'm Working :</code>: <code>{}</code>".format(
