@@ -69,30 +69,34 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟Anjal](https://telegra.ph/file/434967e94c3dda08b34ac.jpg). 
 𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬! 𝐇𝐢𝐭 /help.
+
 ✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰
 """
 
 buttons = [
     [
-                        InlineKeyboardButton(
-                            text="Add Me ⚡",
-                            url="t.me/AnjalRobot?startgroup=true"),
-                       InlineKeyboardButton(text="Bot Support ⚡", url="t.me/vegetaSupport"),
+        InlineKeyboardButton(
+                            text="✨ Add Anjal to your Group ✨",
+                            url="t.me/AliceZubergRoBot?startgroup=true"),
                     ],
-                   [
-                       InlineKeyboardButton(text="🔐 Help ", callback_data="help_back"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/pegasusNetworkofficial"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
-                     ],
+                    [
+                       InlineKeyboardButton(text="📢 Update", url="t.me/PEGASUSUPDATES"),
+                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasuslogs"),
+                       InlineKeyboardButton(text="🤖 Source", url="https://github.com/godofanjal/anjalrobot"),
+                    ], 
                     [                  
                        InlineKeyboardButton(
-                             text="🗯 Support",
+                             text="👥 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url="https://t.me/PegasusUpdates")
-                     ], 
-    ]
+                             text="📊 Network",
+                             url=f"t.me/pegasusxteam"),
+                        ],
+                       [
+                           InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+         ),
+    ],
+] 
 
 HELP_STRINGS = """
 Whassup Buddy Me Anjal is here!
@@ -281,7 +285,7 @@ def help_button(update, context):
     try:
         if mod_match:
             module = mod_match.group(1)
-            text = ("Here is the help for the *{}* module:\n".format(
+            text = ("Here is the help for the *{}* module\n".format(
                 HELPABLE[module].__mod_name__) + HELPABLE[module].__help__)
             query.message.edit_text(
                 text=text,
