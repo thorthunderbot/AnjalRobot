@@ -21,7 +21,7 @@ from SteelaQueenBot import (
     StartTime,
     telethn,
     updater,
-    pbot)
+    pgram)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
