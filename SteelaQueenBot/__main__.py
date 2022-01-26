@@ -349,7 +349,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="Steela_back")]]
                 ),
             )
 
@@ -393,7 +393,7 @@ def help_button(update, context):
 
 def Steela_data_callback(update, context):
     query = update.callback_query
-    if query.data == "steela_":
+    if query.data == "Steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -406,7 +406,7 @@ def Steela_data_callback(update, context):
                 ]
             ),
         )
-    elif query.data == "steela_back":
+    elif query.data == "Steela_back":
         query.message.edit_text(
                 PM_START_TEXT, 
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -415,7 +415,7 @@ def Steela_data_callback(update, context):
                 disable_web_page_preview=False,
         )
 
-    elif query.data == "steela_info":
+    elif query.data == "Steela_info":
         query.message.edit_text(
             text=f"*Here's basic Help regarding* *How to use Me?*"
             f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
@@ -428,25 +428,25 @@ def Steela_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="admin 👮‍♂️", callback_data="steela_admin"),
-                    InlineKeyboardButton(text="notes 📋", callback_data="steela_notes"),
+                    InlineKeyboardButton(text="admin 👮‍♂️", callback_data="Steela_admin"),
+                    InlineKeyboardButton(text="notes 📋", callback_data="Steela_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="support 👥", callback_data="steela_support"),
-                    InlineKeyboardButton(text="credit 👨🏻‍💻", callback_data="steela_credit"),
+                    InlineKeyboardButton(text="support 👥", callback_data="Steela_support"),
+                    InlineKeyboardButton(text="credit 👨🏻‍💻", callback_data="Steela_credit"),
                  ],
                  [
                     InlineKeyboardButton(text="Go Inline ↗️", switch_inline_query_current_chat=""),
                  ],
                  [
-                    InlineKeyboardButton(text="Back", callback_data="steela_back"),
+                    InlineKeyboardButton(text="Back", callback_data="Steela_back"),
                  
                  ]
                 ]
             ),
         )
 
-    elif query.data == "steela_admin":
+    elif query.data == "Steela_admin":
         query.message.edit_text(
             text=f"*Let's make your group bit effective now*"
             f"\nCongragulations, AnjalRoBot now ready to manage your group."
@@ -463,7 +463,7 @@ def Steela_data_callback(update, context):
             ),
         )
 
-    elif query.data == "steela_notes":
+    elif query.data == "Steela_notes":
         query.message.edit_text(
             text=f"<b> Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -475,7 +475,7 @@ def Steela_data_callback(update, context):
             ),
         )
         
-    elif query.data == "steela_support":
+    elif query.data == "Steela_support":
         query.message.edit_text(
             text="* AnjalRoBot support chats*"
             "\nJoin Support Group/Channel",
@@ -492,7 +492,7 @@ def Steela_data_callback(update, context):
             ),
         )
         
-    elif query.data == "steela_credit":
+    elif query.data == "Steela_credit":
         query.message.edit_text(
             text=f"<b> CREDIT FOR AnjalRoBot DEV'S</b>\n"
             f"\nHere Some Developers Helping in Making The AliceZubergRoBot",
