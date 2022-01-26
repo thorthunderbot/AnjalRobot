@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Numeric, String
 
-from ZeusXRobot.modules.sql import BASE, SESSION
+from SteelaQueenBot.modules.sql import BASE, SESSION
 
 
 class forceSubscribe(BASE):
