@@ -49,6 +49,7 @@
 <a href="https://t.me/UnitedSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
 </p>
 
-## Credit 
-
-• [DeepakJack](https://github.com/DeepakJack007)``Dev``
+## Credit
+• [Crazy Boy](https://t.me/call_me_crazyboy)``Owner``
+ 
+• [DeepakJack](https://t.me/DeepakJack007)``Dev``
