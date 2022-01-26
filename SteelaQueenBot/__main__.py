@@ -252,7 +252,7 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*Hey {},*\n*Steela Queen here*\n*Power lavel time* : {} ".format(
+            "*Hey {},*\n*Anjal is here*\n*Power lavel time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
