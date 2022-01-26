@@ -387,7 +387,7 @@ def help_button(update, context):
 
 
 
-def zeus_data_callback(update, context):
+def steela_data_callback(update, context):
     query = update.callback_query
     if query.data == "steela_":
         query.message.edit_text(
