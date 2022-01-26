@@ -245,10 +245,10 @@ def start(update: Update, context: CallbackContext):
                 timeout=60,
            )
 
-    else:
+   else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*hello! {},*\n*Steela here for you*\n*Working time* : {} ".format(
+            "*Hello! {},*\n*Steela here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
