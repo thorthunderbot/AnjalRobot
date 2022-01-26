@@ -28,7 +28,7 @@ class Config(object):
     EVENT_LOGS = -1001574034400  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
     SQLALCHEMY_DATABASE_URI = 'postgres://waumvqwb:WCE7AAwcaLwHpUI9VPeA78rMAWPv5IyT@abul.db.elephantsql.com/waumvqwb' #do you hub your old heroku app database_URL then put here, most use 25days ago sql
     LOAD = [] #try to kang this db ur big mothersfuckers i know your noob so only kanging my db
-    NO_LOAD = ['rss', 'cleaner', 'connection', 'math']
+    NO_LOAD = ['rss', 'cleaner', 'math']
     WEBHOOK = None
     INFOPIC = True
     URL = None
