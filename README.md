@@ -39,7 +39,7 @@
 
 
 ## Special Credits
-- ZeusXRoBot - base
+- ZeusXRobot - base
 
 
 ### Support
