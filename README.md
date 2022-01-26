@@ -26,7 +26,7 @@
 
 ## ✨ Deploy to Railway ✨
 
-## Edit A SteelaQueenBot/Config.py in
+## Edit A Steela/Config.py in
 - `OWNER_ID`|`OWNER_USERNAME`
 - `API_ID`| `API_HARISH`|
 - `TOKEN`| NOW BOT RUNS RAILWAY!
@@ -35,13 +35,11 @@
    [![Deploy To Railway](https://railway.app/button.svg)](https://railway.app)
 
 
-## `SQLALCHEMY_DATABASE_URI` | MOST USE OLD`DB_URL`
+## `SQLALCHEMY_DATABASE_URI` | MOST USE OLD USE
 
 
 ## Special Credits
 - ZeusXRoBot - base
-- Kurumibot - base
-- Image-Editorbot - module
 
 
 ### Support
