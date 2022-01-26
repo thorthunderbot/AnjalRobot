@@ -92,38 +92,38 @@ buttons = [
                             url="t.me/AliceZubergRoBot?startgroup=true"),
                     ],
                     [
-                       InlineKeyboardButton(text="✵ Network ✵", url="t.me/PEGASUSUPDATES"),
-                       InlineKeyboardButton(text="✵ Logs ✵", url="t.me/pegasuslogs"),
-                       InlineKeyboardButton(text="✵ Info ✵", callback_data="AliceZuberg_info"),
+                       InlineKeyboardButton(text="📢 Update", url="t.me/PEGASUSUPDATES"),
+                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasuslogs"),
+                       InlineKeyboardButton(text="🤖 Source", url="https://github.com/godofanjal/anjalrobot"),
                     ], 
                     [                  
                        InlineKeyboardButton(
-                             text="✵ Support ✵",
+                             text="👥 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="✵ Updates ✵",
-                             url=f"https://t.me/shukurenai007"),
+                             text="📊 Network",
+                             url=f"t.me/pegasusxteam"),
                         ],
                        [
-                           InlineKeyboardButton(text="♔ Help ♔", url="https://t.me/AliceZubergRoBot?start=help"
+                           InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
          ),
     ],
 ] 
 
 HELP_STRINGS = """
-Hey there, I'm [Alice Zuberg](https://telegra.ph/file/a5ec90fed4b7de860193a.jpg). 
+Hey there, I'm 🦋⃟Anjal. 
 Helpful commands:
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-List of all the Modules:
+List of all the Modules
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """Contact to **@shukurenai007bot**"""
-HELP_IMG= "https://telegra.ph/file/f5ca52e581e718a31b9a8.jpg"
+DONATION_STRING = """You can donate by contacting my owner here: @call_me_crazyboy"""
+HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
     
 STICKERS = ( "CAACAgUAAxkBAAIBwmG1oJ9SYkpvwQ3kDQ1mE3SYMiIzAAKOBAACHKGxVc0_w0NILe98IwQ", 
 "CAACAgUAAxkBAAIBwGG1oJ0dhgu9NeqghdzMcnyR_7HNAAJ4BAAC9iyoVcDiQRsJkJxMIwQ", ) 
