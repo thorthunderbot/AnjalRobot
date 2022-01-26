@@ -1,10 +1,10 @@
 import importlib
-import time
 import random
+import time
 import re
+
 from sys import argv
 from typing import Optional
-from platform import python_version #SteelaQueenBot
 
 from SteelaQueenBot import (
     ALLOW_EXCL,
@@ -16,11 +16,12 @@ from SteelaQueenBot import (
     TOKEN,
     URL,
     WEBHOOK,
-    SUPPORT_CHAT, UPDATES_CHANNEL,
+    SUPPORT_CHAT,
     dispatcher,
     StartTime,
     telethn,
-    updater)
+    updater,
+    pbot)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
@@ -28,7 +29,7 @@ from SteelaQueenBot.modules import ALL_MODULES
 from SteelaQueenBot.modules.helper_funcs.chat_status import is_user_admin
 from SteelaQueenBot.modules.helper_funcs.misc import paginate_modules
 from SteelaQueenBot.modules.disable import DisableAbleCommandHandler
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
     ChatMigrated,
@@ -79,51 +80,43 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟Anjal](https://telegra.ph/file/434967e94c3dda08b34ac.jpg). 
-𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬!  𝐇𝐢𝐭 /help.
-✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰. 
-
-──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
-
-STICKERS = (
-      "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", #1
-      "CAACAgUAAxkDAAIiLmHwxwsiYmIVaVEN_olJ-xYhHgoYAALSBAACCzqJVwZF5Lrc8PX7IwQ", #2
-)
+───「 [Alice Zuberg](https://telegra.ph/file/928490010a700fc8db155.jpg) 」───
+*Whassup! {},*
+*I am a themed advance group management bot with a lot of New Features.*
+➖➖➖➖➖➖➖➖➖➖➖➖➖
+✵ Checkout The Help Buttons To Check My Abilities ✵✵
+""" 
 
 buttons = [
     [
         InlineKeyboardButton(
-                            text="༒︎ ADD ANJAL TO YOUR GROUP ༒︎",
-                            url="t.me/AnjalRobot?startgroup=true"),
+                            text="✨ Add Alice Zuberg to Group ✨",
+                            url="t.me/AliceZubergRoBot?startgroup=true"),
                     ],
-                   [
-                       InlineKeyboardButton(text="🤖 Source", url=" https://github.com/godofanjal/AnjalRobot"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
-                     ],
+                    [
+                       InlineKeyboardButton(text="✵ Network ✵", url="t.me/PEGASUSUPDATES"),
+                       InlineKeyboardButton(text="✵ Logs ✵", url="t.me/pegasuslogs"),
+                       InlineKeyboardButton(text="✵ Info ✵", callback_data="AliceZuberg_info"),
+                    ], 
                     [                  
                        InlineKeyboardButton(
-                             text="👥 Support",
-                             url=f"https://t.me/NobisukiSupport"),
+                             text="✵ Support ✵",
+                             url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📢 Updates",
-                             url=f"https://t.me/{UPDATES_CHANNEL}"),
-                     ],
-                    [
-                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+                             text="✵ Updates ✵",
+                             url=f"https://t.me/shukurenai007"),
+                        ],
+                       [
+                           InlineKeyboardButton(text="♔ Help ♔", url="https://t.me/AliceZubergRoBot?start=help"
          ),
     ],
 ] 
 
 HELP_STRINGS = """
-Hi there, I'm *{}*!
-To make me functional, make sure that i have enough rights in your group.
+Hey there, I'm [Alice Zuberg](https://telegra.ph/file/a5ec90fed4b7de860193a.jpg). 
 Helpful commands:
-- /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @NobisukiSupport.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/a989d18c815397f11f84b.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
@@ -131,8 +124,11 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """You can donate by contacting my owner here: @attitudeking420"""
-HELP_IMG= "https://telegra.ph/file/a989d18c815397f11f84b.jpg"
+DONATE_STRING = """Contact to **@shukurenai007bot**"""
+HELP_IMG= "https://telegra.ph/file/f5ca52e581e718a31b9a8.jpg"
+    
+STICKERS = ( "CAACAgUAAxkBAAIBwmG1oJ9SYkpvwQ3kDQ1mE3SYMiIzAAKOBAACHKGxVc0_w0NILe98IwQ", 
+"CAACAgUAAxkBAAIBwGG1oJ0dhgu9NeqghdzMcnyR_7HNAAJ4BAAC9iyoVcDiQRsJkJxMIwQ", ) 
 
 
 IMPORTED = {}
@@ -144,6 +140,8 @@ DATA_IMPORT = []
 DATA_EXPORT = []
 CHAT_SETTINGS = {}
 USER_SETTINGS = {}
+GDPR = []
+CMD_HELP = {}
 
 for module_name in ALL_MODULES:
     imported_module = importlib.import_module("SteelaQueenBot.modules." + module_name)
@@ -164,6 +162,9 @@ for module_name in ALL_MODULES:
 
     if hasattr(imported_module, "__stats__"):
         STATS.append(imported_module)
+        
+    if hasattr(imported_module, "__gdpr__"):
+        GDPR.append(imported_module)
 
     if hasattr(imported_module, "__user_info__"):
         USER_INFO.append(imported_module)
@@ -233,29 +234,35 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-       else:
-           update.effective_message.reply_sticker(
+        else:
+            update.effective_message.reply_sticker(
                 random.choice(STICKERS),
                 timeout=60,
-           )
-           update.effective_message.reply_text(
-                PM_START_TEXT,
+            )
+            first_name = update.effective_user.first_name
+            update.effective_message.reply_text(
+                PM_START_TEXT.format(
+                    escape_markdown(first_name)),                   
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
-           )
-   else:
-       first_name = update.effective_user.first_name
-       update.effective_message.reply_text(
-            "*Hello! {},*\n*Steela here for you*\n*Working time* : {} ".format(
+            )
+  
+   
+          
+
+    else:
+        first_name = update.effective_user.first_name
+        update.effective_message.reply_text(
+            "*Hey {},*\n*Steela Queen here*\n*Power lavel time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"t.me/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/{UPDATES_CHANNEL}"),
+                  InlineKeyboardButton(text="✧ Support ", url=f"https://telegram.dog/{SUPPORT_CHAT}"),
+                  InlineKeyboardButton(text="✧ Updates ", url=f"t.me/shukurenai007"),
                   ]
                 ]
             ),
@@ -334,7 +341,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Module Name:*`{}`\n".format(
+                "❮❮❮❮ 𝗛𝗲𝗹𝗽 𝗳𝗼𝗿 *{}* 𝗺𝗼𝗱𝘂𝗹𝗲 ❯❯❯❯:\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -345,7 +352,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="AliceZuberg_back")]]
                 ),
             )
 
@@ -387,9 +394,9 @@ def help_button(update, context):
 
 
 
-def steela_data_callback(update, context):
+def Steela_data_callback(update, context):
     query = update.callback_query
-    if query.data == "steela_":
+    if query.data == "Steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -397,42 +404,112 @@ def steela_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="steela_back")
+                    InlineKeyboardButton(text="Back", callback_data="Steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "steela_back":
+    elif query.data == "Steela_back":
         query.message.edit_text(
-                PM_START_TEXT,
+                PM_START_TEXT, 
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
                 disable_web_page_preview=False,
         )
-    
-    
-    elif query.data == "steela_info":
-        botuptime = get_readable_time((time.time() - StartTime))
+
+    elif query.data == "Steela_info":
         query.message.edit_text(
-            text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
+            text=f"*Here's basic Help regarding* *How to use Me?*"
+            f"\n\n• Firstly Add {dispatcher.bot.first_name} to your group by pressing [here](http://t.me/{dispatcher.bot.username}?startgroup=true)\n"
+            f"\n• Powerfull Telegram group Management Bot\n"
+            f"\n• Than send `/admincache@AliceZubergRoBot` in that chat to refresh admin list in My database.\n"
+            f"\n\n*All done now use below given button's to know about [use!](https://telegra.ph/file/a5ec90fed4b7de860193a.jpg)*\n"
+            f"",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🔄 Go Inline 🔄", switch_inline_query_current_chat=""),
-                 ],
-                  [
-                    InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
+                    InlineKeyboardButton(text="admin 👮‍♂️", callback_data="AliceZuberg_admin"),
+                    InlineKeyboardButton(text="notes 📋", callback_data="AliceZuberg_notes"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="steela_back"),
+                    InlineKeyboardButton(text="support 👥", callback_data="AliceZuberg_support"),
+                    InlineKeyboardButton(text="credit 👨🏻‍💻", callback_data="AliceZuberg_credit"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Go Inline ↗️", switch_inline_query_current_chat=""),
+                 ],
+                 [
+                    InlineKeyboardButton(text="Back", callback_data="AliceZuberg_back"),
                  
                  ]
                 ]
             ),
         )
 
+    elif query.data == "Steela_admin":
+        query.message.edit_text(
+            text=f"*Let's make your group bit effective now*"
+            f"\nCongragulations, AliceZubergRoBot now ready to manage your group."
+            f"\n\n*Admin Tools*"
+            f"\nBasic Admin tools help you to protect and powerup your group."
+            f"\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
+            f"\n\n*Welcome*"
+            f"\nLets set a welcome message to welcome new users coming to your group."
+            f"send `/setwelcome [message]` to set a welcome message!",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="⬅️ 𝗕𝗔𝗖𝗞", callback_data="AliceZuberg_info")]]
+            ),
+        )
 
+    elif query.data == "Steela_notes":
+        query.message.edit_text(
+            text=f"<b> Setting up notes</b>"
+            f"\nYou can save message/media/audio or anything as notes"
+            f"\nto get a note simply use # at the beginning of a word"
+            f"\n\nYou can also set buttons for notes and filters (refer help menu)",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text= "⬅️ 𝗕𝗔𝗖𝗞", callback_data="AliceZuberg_info")]]
+            ),
+        )
+        
+    elif query.data == "Steela_support":
+        query.message.edit_text(
+            text="* AliceZubergRoBot support chats*"
+            "\nJoin Support Group/Channel",
+            parse_mode=ParseMode.MARKDOWN,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="𝗟𝗢𝗚'ꜱ 😎", url="https://t.me/pegasuslogs"),
+                 ],
+                 [
+                    InlineKeyboardButton(text="𝗦𝗨𝗣𝗣𝗢𝗥𝗧 👥", url= "https://t.me/AliceZubergSupport"),
+                 ], 
+                ]
+            ),
+        )
+        
+    elif query.data == "Steela_credit":
+        query.message.edit_text(
+            text=f"<b> CREDIT FOR AliceZubergRoBot DEV'S</b>\n"
+            f"\nHere Some Developers Helping in Making The AliceZubergRoBot",
+            parse_mode=ParseMode.HTML,
+            reply_markup=InlineKeyboardMarkup(
+                [
+                 [
+                    InlineKeyboardButton(text="Deepak Jack", url="t.me/DeepakJack007"),
+                    InlineKeyboardButton(text="『 𝙆𝙄𝙎𝙃𝙊𝙍𝙀™』", url="t.me/AASFCYBERKING"),
+                    InlineKeyboardButton(text="Katsuki Bakugo", url="t.me/BakugoNo1"), 
+                 ]
+                ]
+            ),
+        )
 
 def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
@@ -660,7 +737,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1610284626 and DONATION_LINK:
+        if OWNER_ID != 1151132400 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -710,7 +787,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","*Anjal Is Alive ⚡*", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@{SUPPORT_CHAT}","[𝙄 𝘼ᴍ 𝘼ʟɪᴠᴇ]()", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
@@ -727,7 +804,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(zeus_data_callback, pattern=r"zeus_")
+    data_callback_handler = CallbackQueryHandler(Steela_data_callback, pattern=r"Steela_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
@@ -753,7 +830,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Steela is now alive and functioning")
+        LOGGER.info("Steela Queen is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
