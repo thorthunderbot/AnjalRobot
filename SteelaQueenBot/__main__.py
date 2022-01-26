@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟SteelaQueen](https://telegra.ph/file/434967e94c3dda08b34ac.jpg). 
+𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟Anjal](https://telegra.ph/file/434967e94c3dda08b34ac.jpg). 
 𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬!  𝐇𝐢𝐭 /help.
 ✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰. 
 
@@ -232,7 +232,7 @@ def start(update: Update, context: CallbackContext):
             elif args[0][1:].isdigit() and "rules" in IMPORTED:
                 IMPORTED["rules"].send_rules(update, args[0], from_pm=True)
 
-      else:
+     else:
          update.effective_message.reply_sticker(
               random.choice(STICKERS),
               timeout=60,
