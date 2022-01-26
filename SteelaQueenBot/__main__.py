@@ -250,7 +250,6 @@ def start(update: Update, context: CallbackContext):
 
    
           
-
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
@@ -830,7 +829,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Anjal is now alive and functioning")
+        LOGGER.info("Steela is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
