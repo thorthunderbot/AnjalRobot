@@ -76,11 +76,11 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-                            text="✨ Add Anjal to your Group ✨",
-                            url="t.me/AliceZubergRoBot?startgroup=true"),
+                            text="✨ ADD ANJAL TO YOUR GROUP ✨",
+                            url="t.me/AnjalRoBot?startgroup=true"),
                     ],
                     [
-                       InlineKeyboardButton(text="📢 Update", url="t.me/PEGASUSUPDATES"),
+                       InlineKeyboardButton(text="📊 Network", url="t.me/pegasusxteam"),
                        InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasuslogs"),
                        InlineKeyboardButton(text="🤖 Source", url="https://github.com/godofanjal/anjalrobot"),
                     ], 
@@ -89,11 +89,11 @@ buttons = [
                              text="👥 Support",
                              url=f"https://t.me/{SUPPORT_CHAT}"),
                        InlineKeyboardButton(
-                             text="📊 Network",
-                             url=f"t.me/pegasusxteam"),
+                             text="📢 Update",
+                             url=f"t.me/pegasusupdates"),
                         ],
                        [
-                           InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
+                           InlineKeyboardButton(text="🔐 COMMADS 🔐", callback_data="help_back"
          ),
     ],
 ] 
