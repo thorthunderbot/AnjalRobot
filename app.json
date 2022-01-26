@@ -1,7 +1,7 @@
 {
-       "name": "SteelaQueenBot",
+       "name": "AnjalRobot",
       "description": "An Anime themed Telegram group management bot.",
-      "logo": "https://telegra.ph/file/93d44be06b8362cf8b411.jpg",
+      "logo": "",
       "keywords": [
          "telegram",
          "anime",
@@ -9,7 +9,7 @@
          "manager",
          "Steela"
       ],   
-   "repository": "https://github.com/godofanjal/SteelaQueenBot",
+   "repository": "https://github.com/GodOfanjal/AnjalRobot",
    "addons": [
       {
          "options": {
