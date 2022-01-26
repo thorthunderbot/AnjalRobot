@@ -227,6 +227,9 @@ def start(update: Update, context: CallbackContext):
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
             )
+
+
+
     else:
         update.effective_message.reply_video(
             caption= "<code>Anjal Here For You🖤\nI'm Working :</code>: <code>{}</code>".format(
@@ -327,9 +330,9 @@ def help_button(update, context):
         pass
 
 run_async
-def vegeta_about_callback(update: Update, context: CallbackContext):
+def Steela_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "steela_":
+    if query.data == "Steela_":
         query.message.edit_text(
             text=""" ℹ️ I'm *Anjal*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
@@ -346,12 +349,12 @@ def vegeta_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="steela_back")
+                    InlineKeyboardButton(text="Back", callback_data="Steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "steela_back":
+    elif query.data == "Steela_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -601,7 +604,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(
         settings_button, pattern=r"stngs_")
-    about_callback_handler = CallbackQueryHandler(vegeta_about_callback, pattern=r"vegeta_")
+    about_callback_handler = CallbackQueryHandler(Steela_about_callback, pattern=r"Steela_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate,
                                      migrate_chats)
