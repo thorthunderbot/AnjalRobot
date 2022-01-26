@@ -85,8 +85,8 @@ PM_START_TEXT = """
 
 ──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
 STICKERS = (
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", #1
+      "CAACAgUAAxkDAAIiLmHwxwsiYmIVaVEN_olJ-xYhHgoYAALSBAACCzqJVwZF5Lrc8PX7IwQ", #2
 )
 
 buttons = [
@@ -752,7 +752,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Zeus is now alive and functioning")
+        LOGGER.info("Steela is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
