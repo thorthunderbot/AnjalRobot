@@ -18,6 +18,10 @@
 </p>
 
 
+Available on Telegram
+[AnjalRobot](https://t.me/AnjalRobot)
+
+
 ## ✨ Deploy to Heroku ✨
 
 ᴄʟɪᴄᴋ ᴛᴏ ᴅᴇᴘʟᴏʏ sᴄʀᴇᴇɴ ᴏғ ʜᴇʀᴏᴋᴜ ғɪʟʟ ᴀ ᴠᴀʀs ɴᴏᴡ ʙᴏᴛ ʀᴜɴs ʜᴇʀᴏᴋᴜ!
