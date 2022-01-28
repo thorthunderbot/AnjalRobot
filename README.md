@@ -46,7 +46,6 @@
 <p>
 <a href="https://t.me/AnjalRobot"> <img src="https://img.shields.io/badge/Telegram-RoBot-blue?&logo=telegram" alt="Telegram RoBot" /> </a><br>
 <a href="https://t.me/NobisukiSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
-<a href="https://t.me/UnitedSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
 </p>
 
 ## Credit
