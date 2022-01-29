@@ -15,24 +15,24 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 12766057 # integer value, dont use ""
-    API_HASH = "2d27353eb16c951fe96fc2b97f2b47d0"
-    TOKEN = "2021201316:AAGgc_nUSiMb2ZMoXQHNlUi4hhKGpXske2M"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
-    OWNER_ID = 1891633746  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "call_me_crazyboy"
+    API_ID =  # integer value, dont use ""
+    API_HASH = ""
+    TOKEN = ""  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    OWNER_ID =   # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = ""
     SUPPORT_CHAT = 'NobisukiSupport'  #Your own group for support, do not add the @
     UPDATES_CHANNEL = 'PegasusUpdates' #Your own channel for Updates of bot, Do not add @
     JOIN_LOGGER = -1001666190681  #Prints any new group the bot is added to, prints just the name and ID.
     REM_BG_API_KEY = "http://removebg.com"
     TEMP_DOWNLOAD_DIRECTORY = ""
     EVENT_LOGS = -1001666190681  #Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
-    SQLALCHEMY_DATABASE_URI = 'postgres://totdbadw:fgxQctcwbmAcJIkkddUv00API498CtUR@rajje.db.elephantsql.com/totdbadw' #do you hub your old heroku app database_URL then put here, most use 25days ago sql
+    SQLALCHEMY_DATABASE_URI = '' #do you hub your old heroku app database_URL then put here, most use 25days ago sql
     LOAD = [] #try to kang this db ur big mothersfuckers i know your noob so only kanging my db
     NO_LOAD = ['rss', 'cleaner', 'math']
     WEBHOOK = None
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = "yanOAsklE5nhYnILw7M~dHLnRazZQcPXfo818_UhkvEIA6yLD4cmYH1PkM1v7SM3"  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
     BOT_USERNAME = "AnjalRoBot"
     BOT_ID = "2021201316"
