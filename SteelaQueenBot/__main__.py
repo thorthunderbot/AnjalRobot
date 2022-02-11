@@ -24,10 +24,10 @@ from SteelaQueenBot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from SoulQueenBot.modules import ALL_MODULES
-from SoulQueenBot.modules.helper_funcs.chat_status import is_user_admin
-from SoulQueenBot.modules.helper_funcs.misc import paginate_modules
-from SoulQueenBot.modules.disable import DisableAbleCommandHandler
+from SteelaQueenBot.modules import ALL_MODULES
+from SteelaQueenBot.modules.helper_funcs.chat_status import is_user_admin
+from SteelaQueenBot.modules.helper_funcs.misc import paginate_modules
+from SteelaQueenBot.modules.disable import DisableAbleCommandHandler
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update, __version__ as ptbver
 from telegram.error import (
     BadRequest,
