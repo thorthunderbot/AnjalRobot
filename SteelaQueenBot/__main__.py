@@ -95,27 +95,25 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-                            text="☑️ SUBMIT GOD ZEUS ☑️",
-                            url="t.me/ZeusXRobot?startgroup=true"),
-                    ],
-                   [
-                       InlineKeyboardButton(text="🤖 Stats", callback_data="zeus_info"),
-                       InlineKeyboardButton(text="📊 Network", url="t.me/PegasusXteam"),
-                       InlineKeyboardButton(text="🔔 Logs", url="t.me/pegasusLogs"),
-                     ],
-                    [                  
-                       InlineKeyboardButton(
-                             text="👫 Freedom",
-                             url=f"https://t.me/UnitedSupport"),
-                       InlineKeyboardButton(
-                             text="⚡ ZeusUpdates",
-                             url=f"https://t.me/{UPDATES_CHANNEL}"),
-                     ],
-                    [
-                    InlineKeyboardButton(text="🔐 Open commads 🔐", callback_data="help_back"
-         ),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AnjalRobot?startgroup=true"),
     ],
-] 
+    [
+        InlineKeyboardButton(text="🤝 ғʀɪᴇɴᴅs", url="https://t.me/PegasusBots/171"),
+        InlineKeyboardButton(
+            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobisukiSupport"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/Pegasuslogs"),
+        InlineKeyboardButton(
+            text="source", url=f"https://Github.com/godofanjal/AnjalRobot"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+    ],
+]
+ 
 
 HELP_STRINGS = """
 Hi there, I'm *{}*!
