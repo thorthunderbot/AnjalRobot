@@ -6,7 +6,21 @@ from sys import argv
 from typing import Optional
 from platform import python_version #SteelaQueenBot
 
-from SoulQueenBot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER, OWNER_ID, PORT, TOKEN, URL, WEBHOOK, SUPPORT_CHAT, UPDATES_CHANNEL, dispatcher, StartTime, telethn, updater)
+from SteelaQueenBot import (
+    ALLOW_EXCL,
+    CERT_PATH,
+    DONATION_LINK,
+    LOGGER,
+    OWNER_ID,
+    PORT,
+    TOKEN,
+    URL,
+    WEBHOOK,
+    SUPPORT_CHAT, UPDATES_CHANNEL,
+    dispatcher,
+    StartTime,
+    telethn,
+    updater)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
