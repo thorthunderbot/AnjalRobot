@@ -6,7 +6,7 @@ from sys import argv
 from typing import Optional
 from platform import python_version #SteelaQueenBot
 
-from SoulQueenBot import (
+from SoulQueenBot.import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
