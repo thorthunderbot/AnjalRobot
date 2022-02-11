@@ -98,7 +98,7 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AnjalRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="🤝 ғʀɪᴇɴᴅs", url="https://t.me/PegasusBots/171"),
+        InlineKeyboardButton(text="ғʀɪᴇɴᴅs", url="https://t.me/PegasusBots/171"),
         InlineKeyboardButton(
             text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobisukiSupport"
         ),
