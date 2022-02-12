@@ -341,7 +341,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="stla_back")]]
                 ),
             )
 
@@ -385,7 +385,7 @@ def help_button(update, context):
 
 def zeus_data_callback(update, context):
     query = update.callback_query
-    if query.data == "steela_":
+    if query.data == "stla_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -393,12 +393,12 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="steela_back")
+                    InlineKeyboardButton(text="Back", callback_data="stla_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "steela_back":
+    elif query.data == "stla_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -408,7 +408,7 @@ def zeus_data_callback(update, context):
         )
     
     
-    elif query.data == "zeus_info":
+    elif query.data == "stla_info":
         botuptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
@@ -723,7 +723,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(steela_data_callback, pattern=r"steela_")
+    data_callback_handler = CallbackQueryHandler(steela_data_callback, pattern=r"stla_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
