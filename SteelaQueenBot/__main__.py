@@ -79,17 +79,13 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-──『[GOD OF THUNDER](https://telegra.ph/file/4c33a90f7df190fd81763.jpg)』──
+𝐇𝐞𝐲 𝐈'𝐦 [🦋⃟Anjal](https://telegra.ph/file/434967e94c3dda08b34ac.jpg). 
+𝐈 𝐇𝐚𝐯𝐞 𝐋𝐨𝐭 𝐎𝐟 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐚𝐧𝐝 𝐈 𝐂𝐚𝐧 𝐄𝐚𝐬𝐢𝐥𝐲 𝐌𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬! 𝐇𝐢𝐭 /help.
 
-*Hello User!!*
-𝐇𝐞𝐲 𝐈'𝐦 [๖ۣۜZΞUS༻](https://en.m.wikipedia.org/wiki/Zeus),👋
-𝐈 𝐀𝐦 𝐀 𝐆𝐫𝐞𝐞𝐤 𝐌𝐲𝐭𝐡𝐨𝐥𝐨𝐠𝐲 𝐆𝐨𝐝 
-𝐀𝐝𝐝 𝐌𝐞 𝐓𝐨 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩 𝐈 𝐖𝐢𝐥𝐥 𝐃𝐞𝐬𝐭𝐫𝐨𝐲 𝐄𝐯𝐢𝐥𝐬 𝐖𝐢𝐭𝐡 𝐌𝐲 𝐓𝐡𝐮𝐧𝐝𝐞𝐫...
-
-──『*ᴛʜᴀɴᴋs  ғᴏʀ  ᴜsɪɴɢ*』"""
+✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰ """
 STICKERS = (
-      "CAACAgUAAx0CRiLf0wACvWBhmnKjHrrDcVgz6Ssk5wvA05NLDQACbgIAAv_H2FQTHfy_9X7rfSIE", #1
-      "CAACAgUAAx0CRiLf0wACvWZhmnOJLucdVwga5fnQJ0i7tD6nIgACsAQAAq042VQYQWM0cthfbyIE", #2
+      "CAACAgUAAxkDAAIiJ2HwxqRsYGwQZjt4NUsUev2mwUjaAAJaBAACCzqBV0uYYhQT_rO0IwQ", #1
+      "CAACAgUAAxkDAAIiLmHwxwsiYmIVaVEN_olJ-xYhHgoYAALSBAACCzqJVwZF5Lrc8PX7IwQ", #2
 )
 
 buttons = [
@@ -131,8 +127,8 @@ List of all the Modules:
 )
 
 HELP_MSG = "Click the button below to get help manu in your pm."
-DONATE_STRING = """t.me/unitedsupport"""
-HELP_IMG= "https://telegra.ph/file/5f296f959250d7cd88b09.jpg"
+DONATE_STRING = """Don't need to donate I'm free for every one add your group's this my donate🙂"""
+HELP_IMG= "https://telegra.ph/file/50fbdf1bff30369d62a59.jpg"
 
 
 IMPORTED = {}
@@ -247,15 +243,15 @@ def start(update: Update, context: CallbackContext):
     else:
         first_name = update.effective_user.first_name
         update.effective_message.reply_text(
-            "*hello! {},*\n*Zeus here for you*\n*Working time* : {} ".format(
+            "*hello! {},*\n*Anjal here for you*\n*Working time* : {} ".format(
              first_name,uptime
             ),
             parse_mode=ParseMode.MARKDOWN,
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"t.me/{SUPPORT_CHAT}"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/{UPDATES_CHANNEL}"),
+                  InlineKeyboardButton(text=" Support ", url=f"t.me/NobisukiSupport"),
+                  InlineKeyboardButton(text=" Updates ", url=f"t.me/PegasusUpdates"),
                   ]
                 ]
             ),
@@ -334,7 +330,7 @@ def help_button(update, context):
         if mod_match:
             module = mod_match.group(1)
             text = (
-                "*Powered By @PegasusXteam*\n *Module Name:*`{}`\n".format(
+                "*Module Name:*`{}`\n".format(
                     HELPABLE[module].__mod_name__
                 )
                 + HELPABLE[module].__help__
@@ -345,7 +341,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="zeus_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="steela_back")]]
                 ),
             )
 
@@ -389,7 +385,7 @@ def help_button(update, context):
 
 def zeus_data_callback(update, context):
     query = update.callback_query
-    if query.data == "zeus_":
+    if query.data == "steela_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -397,12 +393,12 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="zeus_back")
+                    InlineKeyboardButton(text="Back", callback_data="steela_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "zeus_back":
+    elif query.data == "steela_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -425,7 +421,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
+                    InlineKeyboardButton(text="⬅ Back", callback_data="steela_back"),
                  
                  ]
                 ]
@@ -727,7 +723,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(zeus_data_callback, pattern=r"zeus_")
+    data_callback_handler = CallbackQueryHandler(steela_data_callback, pattern=r"steela_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
@@ -753,7 +749,7 @@ def main():
             updater.bot.set_webhook(url=URL + TOKEN)
 
     else:
-        LOGGER.info("Zeus is now alive and functioning")
+        LOGGER.info("Anjal is now alive and functioning")
         updater.start_polling(timeout=15, read_latency=4, clean=True)
 
     if len(argv) not in (1, 3, 4):
