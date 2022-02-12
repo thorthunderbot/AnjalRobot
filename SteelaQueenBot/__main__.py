@@ -98,15 +98,15 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AnjalRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ғʀɪᴇɴᴅs", url="https://t.me/PegasusBots/171"),
+        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇ", url="https://t.me/PegasusUpdates"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/NobisukiSupport"
+            text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/NobisukiSupport"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/Pegasuslogs"),
+        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/PegasusXteam"),
         InlineKeyboardButton(
-            text="source", url=f"https://Github.com/godofanjal/AnjalRobot"
+            text="source", url="https://Github.com/godofanjal/AnjalRobot"
         ),
     ],
     [
