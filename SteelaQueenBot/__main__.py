@@ -100,7 +100,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/PegasusXteam"),
+        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/Pegasus_Network"),
         InlineKeyboardButton(
             text="source", url="https://Github.com/godofanjal/AnjalRobot"
         ),
