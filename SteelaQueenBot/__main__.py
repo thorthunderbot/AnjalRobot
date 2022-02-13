@@ -118,7 +118,7 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @ZeusSupportChat.
+If you want to report bugs or have any questions on how to use me then feel free to reach out: @NobisukiSupport.
 All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
 List of all the Modules:
 """.format(
@@ -341,7 +341,7 @@ def help_button(update, context):
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
-                      InlineKeyboardButton(text="⬅ Home", callback_data="stla_back")]]
+                      InlineKeyboardButton(text="⬅ Home", callback_data="zeus_back")]]
                 ),
             )
 
@@ -393,12 +393,12 @@ def zeus_data_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="Back", callback_data="stla_back")
+                    InlineKeyboardButton(text="Back", callback_data="zeus_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "stla_back":
+    elif query.data == "zeus_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -421,7 +421,7 @@ def zeus_data_callback(update, context):
                     InlineKeyboardButton(text="📢 Updates", url="t.me/PegasusUpdates"),
                  ],
                  [
-                    InlineKeyboardButton(text="⬅ Back", callback_data="steela_back"),
+                    InlineKeyboardButton(text="⬅ Back", callback_data="zeus_back"),
                  
                  ]
                 ]
@@ -723,7 +723,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    data_callback_handler = CallbackQueryHandler(steela_data_callback, pattern=r"stla_")
+    data_callback_handler = CallbackQueryHandler(zeus_data_callback, pattern=r"zeus_")
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
 
