@@ -84,8 +84,8 @@ PM_START_TEXT = """
 
 ✰ 𝐅𝐞𝐞𝐥 𝐅𝐫𝐞𝐞 𝐓𝐨 𝐀𝐝𝐝 𝐘𝐨𝐮𝐫 𝐆𝐫𝐨𝐮𝐩𝐬 ✰ """
 STICKERS = (
-      "CAACAgUAAx0CXrs_EAACATdiCLDDkr7y2a5uhFKpb4FcMeKV3gACMQQAAutaQVTlfD8kcJJAsCME", #1
-      "CAACAgUAAx0CXrs_EAACAS9iCLBjLTaCvwZB9yB_ZjqtxU56OAACgwUAAhB_SFQa3BQgUmg6ASME", #2
+      "CAACAgUAAx0CY1ANWQACDcliCLdhmasUbGlkiyPtZzTtFnZplwACMQQAAutaQVTlfD8kcJJAsCME", #1
+      "CAACAgUAAx0CY1ANWQACDcViCLacbwHe3pqWExQbL-qRsJ0dbAACNAUAAuhsSVRfOoWsSd8GTCME", #2
 )
 
 buttons = [
