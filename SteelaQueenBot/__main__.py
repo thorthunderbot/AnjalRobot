@@ -119,7 +119,7 @@ Helpful commands:
 - /help: Sends this message; I'll tell you more about myself!
 - /donate: Gives you info on how to support me and my creator.
 If you want to report bugs or have any questions on how to use me then feel free to reach out: @NobisukiSupport.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/648aca75adfb9533a2161.jpg)
+All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
 List of all the Modules:
 """.format(
     dispatcher.bot.first_name,
