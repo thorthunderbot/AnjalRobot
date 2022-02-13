@@ -318,7 +318,7 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     if disaster_level_present:
-        text += ' \n[<a href="https://t.me/pegasusxteam/36">What is Ranks</a>]'.format(
+        text += ' \n[<a href="https://t.me/PegasusUpdates/29">What is Ranks</a>]'.format(
             bot.username)
 
     try:
@@ -429,7 +429,7 @@ def set_about_me(update: Update, context: CallbackContext):
 def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
-    status = "*╒═══「 📊 Steela Stats 」*\n\n"
+    status = "*╒═══「 📊 Anjal Stats 」*\n\n"
     status += "*➢ Steela Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
@@ -450,8 +450,8 @@ def stats(update, context):
             status
             + "\n*Bot statistics*:\n"
             + "\n".join([mod.__stats__() for mod in STATS])
-            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT})  | [✦ Updates](https://t.me/ZeusUpdates)\n\n"
-            + "╘══「 by [God](https://github.com/godofanjal) 」\n",
+            + f"\n\n[✦ Support](https://t.me/{SUPPORT_CHAT})  | [✦ Updates](https://t.me/PegasusUpdates)\n\n"
+            + "╘══「 by [God](https://t.me/call_me_crazyboy) 」\n",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
         )
@@ -465,7 +465,7 @@ def stats(update, context):
                     )
                     + f"\n\n✦ [Support](https://t.me/{SUPPORT_CHAT}) | ✦ [Updates](https://t.me/ZeusUpdates)\n\n"
                 )
-                + "╘══「 by [God](https://github.com/godofanjal) 」\n"
+                + "╘══「 by [God](https://t.me/call_me_crazyboy) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
