@@ -46,7 +46,7 @@
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "cRaZyBoY_420"
+         "value": "call_me_crazyboy"
       },
       "INFOPIC": {
          "description": "userinfo picture Show In Info.",
@@ -55,7 +55,7 @@
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "PegasusSupportOfficial"
+         "value": "NobisukiSupport"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
@@ -137,7 +137,7 @@
       "DONATION_LINK": {
          "description": "Optional: link where you would like to receive donations. If you are a noob, better leave it",
          "required": false,
-         "value": "https://t.me/PegasusSupportOfficial"
+         "value": ""
       },
       "DEL_CMDS": {
          "description": "Set this to True if you want to delete command messages from users who don't have the perms to run that command.",
