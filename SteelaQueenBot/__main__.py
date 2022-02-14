@@ -115,9 +115,9 @@ HELP_STRINGS = """
 Hi there, I'm *{}*!
 To make me functional, make sure that i have enough rights in your group.
 Helpful commands:
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-- /donate: Gives you info on how to support me and my creator.
+- /start Starts me! You've probably already used this.
+- /help Sends this message; I'll tell you more about myself!
+- /donate Gives you info on how to support me and my creator.
 If you want to report bugs or have any questions on how to use me then feel free to reach out: @NobisukiSupport.
 All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
 List of all the Modules:
