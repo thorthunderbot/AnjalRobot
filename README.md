@@ -18,8 +18,7 @@
 </p>
 
 
-## Available on Telegram as
-[AnjalRobot](https://t.me/AnjalRobot)
+## Available on Telegram as [AnjalRobot](https://t.me/AnjalRobot)
 
 
 ## ✨ Deploy to Heroku ✨
