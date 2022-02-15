@@ -19,7 +19,7 @@
 
 
 ## Available on Telegram as
-[ANJALROBOT](https://t.me/AnjalRobot)
+[AnjalRobot](https://t.me/AnjalRobot)
 
 
 ## ✨ Deploy to Heroku ✨
