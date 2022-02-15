@@ -18,7 +18,7 @@
 </p>
 
 
-Available on Telegram as
+## Available on Telegram as
 [AnjalRobot](https://t.me/AnjalRobot)
 
 
