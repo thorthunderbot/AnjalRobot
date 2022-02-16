@@ -340,8 +340,8 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="「🍃𝐆𝐎 𝐁𝐀𝐂𝐊🍂」", callback_data="help_back"),
-                      InlineKeyboardButton(text="🏡 𝐇𝐎𝐌𝐄 🏘", callback_data="zeus_back")]]
+                    [[InlineKeyboardButton(text="⬅ Back", callback_data="help_back"),
+                      InlineKeyboardButton(text="⬅ Home", callback_data="zeus_back")]]
                 ),
             )
 
@@ -385,7 +385,7 @@ def help_button(update, context):
 
 def zeus_data_callback(update, context):
     query = update.callback_query
-    if query.data == "stla_":
+    if query.data == "zeus_":
         query.message.edit_text(
             text="""CallBackQueriesData Here""",
             parse_mode=ParseMode.MARKDOWN,
@@ -408,7 +408,7 @@ def zeus_data_callback(update, context):
         )
     
     
-    elif query.data == "stla_info":
+    elif query.data == "zeus_info":
         botuptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
             text="*🤖 BOT* : `Alive`\n*⚡ UPTIME* : `{}`\n*💫 PYTHON* : `{}`\n🌠 PTB* : `{}`\n*🙄REPO* : `Private`\n".format(botuptime,python_version,ptbver),parse_mode=ParseMode.MARKDOWN,
