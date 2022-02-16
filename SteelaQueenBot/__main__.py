@@ -112,15 +112,13 @@ buttons = [
  
 
 HELP_STRINGS = """
-Hi there, I'm *{}*!
-To make me functional, make sure that i have enough rights in your group.
-Helpful commands:
-- /start: Starts me! You've probably already used this.
-- /help: Sends this message; I'll tell you more about myself!
-- /donate: Gives you info on how to support me and my creator.
-If you want to report bugs or have any questions on how to use me then feel free to reach out: @NobisukiSupport.
-All commands can be used with the following: *(/),(!),(?),(.),(~)*[!](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
-List of all the Modules:
+𝐇𝐢 𝐭𝐡𝐞𝐫𝐞, 𝐈'𝐦 *{}*!
+𝐂𝐥𝐢𝐤𝐞 𝐁𝐞𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧 𝐀𝐧𝐝 𝐆𝐞𝐭 𝐃𝐨𝐜𝐮𝐦𝐚𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐌𝐨𝐝𝐮𝐥𝐞𝐬..
+𝐓𝐨 𝐦𝐚𝐤𝐞 𝐦𝐞 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐚𝐥, 𝐦𝐚𝐤𝐞 𝐬𝐮𝐫𝐞 𝐭𝐡𝐚𝐭 𝐢 𝐡𝐚𝐯𝐞 𝐞𝐧𝐨𝐮𝐠𝐡 𝐫𝐢𝐠𝐡𝐭𝐬 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩.
+𝐇𝐞𝐥𝐩𝐟𝐮𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬
+𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐫𝐞𝐩𝐨𝐫𝐭 𝐛𝐮𝐠𝐬 𝐨𝐫 𝐡𝐚𝐯𝐞 𝐚𝐧𝐲 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐨𝐧 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞 𝐭𝐡𝐞𝐧 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐫𝐞𝐚𝐜𝐡 𝐨𝐮𝐭: @NobisukiSupport.
+𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠: (/),(!),(?),(.),(~)[!](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
+𝐋𝐢𝐬𝐭 𝐨𝐟 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐌𝐨𝐝𝐮𝐥𝐞𝐬:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
