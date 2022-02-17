@@ -275,7 +275,7 @@ async def apk(e):
         await e.reply("Exception Occured:- " + str(err))
 
 
-__mod_name__ = "🎒Tools"
+__mod_name__ = "🎒TOOLS"
 
 __help__ = """
  ❍ `/ud` (text)*:* meaning of the word
