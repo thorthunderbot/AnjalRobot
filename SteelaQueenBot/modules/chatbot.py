@@ -144,7 +144,7 @@ __help__ = """
 *Powered by ItelAi*
 """
 
-__mod_name__ = "🤖ChatBot"
+__mod_name__ = "🤖CHATBOT"
 
 
 CHATBOTK_HANDLER = CommandHandler("chatbot", kuki )
