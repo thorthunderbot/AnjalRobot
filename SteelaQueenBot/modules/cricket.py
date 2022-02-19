@@ -47,4 +47,4 @@ __help__ = """
 ❍ /cs : Latest live scores from cricket info
 """
 
-__mod_name__ = "🏏CRICKET"
+__mod_name__ = "🏏Cricket"
