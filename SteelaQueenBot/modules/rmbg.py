@@ -94,4 +94,4 @@ def ReTrieveFile(input_file_name):
 
 
 
-__mod_name__ = "REMOVE BG"
+__mod_name__ = "Remove BG"
