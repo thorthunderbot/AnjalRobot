@@ -6,7 +6,7 @@ import os
 import time
 import requests
 import wget
-import yt_dlp
+import youtube
 from urllib.parse import urlparse
 from pyrogram import filters
 from pyrogram.types import Message
