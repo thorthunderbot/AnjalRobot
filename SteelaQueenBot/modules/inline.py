@@ -1,6 +1,6 @@
 import traceback
 
-from SteelaQueenBot import pbot as app
+from SteelaQueenBot import pgram as app
 from SteelaQueenBot.utils.inlinefuncs import *
 
 __mod_name__ = "Inline"
