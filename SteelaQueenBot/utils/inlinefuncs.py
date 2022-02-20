@@ -97,19 +97,16 @@ async def alive_function(answers):
 
     msg = f"""
 **[Anjal❤️](https://t.me/AnjalRobot):**
-**RoBot:** `{bot_state}`
-**UserBot:** `Alive`
 **Python:** `{pyver.split()[0]}`
 **Pyrogram:** `{pyrover}`
-**MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](https://t.me/lunatapibot) | [UBOT](https://t.me/tdrki_1)
+**Profiles:** [BOT](https://t.me/AnjalRobot) | [SUPPORT](https://t.me/NobisukiSupport)
 """
     answers.append(
         InlineQueryResultArticle(
             title="Alive",
             description="Check Luna Stats",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            thumb_url="https://telegra.ph/file/434967e94c3dda08b34ac.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -123,20 +120,20 @@ async def about_function(answers):
     buttons = InlineKeyboard(row_width=2)
     bot_state = "Dead" if not await app.get_me() else "About"
     buttons.add(
-        InlineKeyboardButton("Support", url=f"https://t.me/lunaXresso"),
-        InlineKeyboardButton("Channel", url=f"https://t.me/zeinproject"),
+        InlineKeyboardButton("Support", url=f"https://t.me/NobisukiSupport"),
+        InlineKeyboardButton("Updates", url=f"https://t.me/PegasusUpdates"),
     )
 
     msg = f"""
-[Luna ✨](https://t.me/lunatapibot) 
-   Maintained by [X](t.me/tdrki_1)
+[Anjal ✨](https://t.me/AnjalRobot) 
+   Maintained by [X](t.me/call_me_crazyboy)
 Built with using python-telegram-bot v13.7 Running on Python 3.9.7
 """
     answers.append(
         InlineQueryResultArticle(
             title="About",
-            description="About Luna",
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            description="About Anjal",
+            thumb_url="https://telegra.ph/file/434967e94c3dda08b34ac.jpg",
             input_message_content=InputTextMessageContent(
                 msg, disable_web_page_preview=True
             ),
@@ -452,7 +449,7 @@ async def tg_search_func(answers, text, user_id):
 
 async def music_inline_func(answers, query):
     chat_id = -1001574867550
-    group_invite = "https://t.me/TedeMusicCache"
+    group_invite = "https://t.me/NobisukiSupport"
     try:
         messages = [
             m
