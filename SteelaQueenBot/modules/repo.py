@@ -1,10 +1,11 @@
-from import craz
+import os
+import re
 from telethon import events, Button
 from telegram.parsemode import ParseMode
 
 ANJAL_PIC = "https://telegra.ph/file/f1603e71bdc0b60082609.jpg"
 
-@craz.on(events.NewMessage(incoming=True, pattern="/repo"))
+@register(pattern=("/repo"))
 async def repo(e):
     k = f"**Hi** {e.sender.first_name} **Thank You For Using Here is My Current Repo **"
     BUTTON = [
