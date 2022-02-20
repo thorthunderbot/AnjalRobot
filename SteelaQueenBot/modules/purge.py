@@ -74,7 +74,7 @@ async def delete_messages(event):
 __help__ = """
 ❍ /del*:* deletes the message you replied to message
 ❍ /purge*:* deletes all messages between this and the replied to message.
-❍ /purge*:* <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+❍ /purge*:* <integer X>*:* deletes the replied message, and X messages following it replied to a message.
 """
 
 
