@@ -71,12 +71,18 @@ async def delete_messages(event):
     await event.client.delete_messages(chat, del_message)
 
 
+__help__ = """
+❍ /del*:* deletes the message you replied to message
+❍ /purge*:* deletes all messages between this and the replied to message.
+❍ /purge*:* <integer X>*:* deletes the replied message, and X messages following it if replied to a message.
+
+
 PURGE_HANDLER = purge_messages, events.NewMessage(pattern="^[!/]purge$")
 DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 
-__mod_name__ = "⛔Delete"
+__mod_name__ = "🗑️Purge"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
