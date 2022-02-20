@@ -31,13 +31,8 @@ from SteelaQueenBot import DEV_USERS
 from SteelaQueenBot import LOG_GROUP_ID
 from SteelaQueenBot import pbot as app 
 from SteelaQueenBot.modules.memek import arq
-from SteelaQueenBot.core.keyboard import ikb
-from SteelaQueenBot.core.tasks import _get_tasks_text, all_tasks, rm_task
 from SteelaQueenBot.core.types import InlineQueryResultCachedDocument
 from SteelaQueenBot.modules.info import get_chat_info, get_user_info
-from SteelaQueenBot.modules.music import download_youtube_audio
-from SteelaQueenBot.utils.functions import test_speedtest
-from SteelaQueenBot.utils.pastebin import paste
 
 MESSAGE_DUMP_CHAT = LOG_GROUP_ID
 
@@ -82,7 +77,7 @@ async def inline_help_func(__help__):
             input_message_content=InputTextMessageContent(
                 "Click a button to get started."
             ),
-            thumb_url="https://telegra.ph/file/a03660425cd749faf0a4a.jpg",
+            thumb_url="https://telegra.ph/file/434967e94c3dda08b34ac.jpg",
             reply_markup=buttons,
         ),
     ]
@@ -101,7 +96,7 @@ async def alive_function(answers):
     )
 
     msg = f"""
-**[Luna❤️](https://t.me/lunatapibot):**
+**[Anjal❤️](https://t.me/AnjalRobot):**
 **RoBot:** `{bot_state}`
 **UserBot:** `Alive`
 **Python:** `{pyver.split()[0]}`
