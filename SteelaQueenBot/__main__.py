@@ -117,7 +117,7 @@ HELP_STRINGS = """
 𝐓𝐨 𝐦𝐚𝐤𝐞 𝐦𝐞 𝐟𝐮𝐧𝐜𝐭𝐢𝐨𝐧𝐚𝐥, 𝐦𝐚𝐤𝐞 𝐬𝐮𝐫𝐞 𝐭𝐡𝐚𝐭 𝐢 𝐡𝐚𝐯𝐞 𝐞𝐧𝐨𝐮𝐠𝐡 𝐫𝐢𝐠𝐡𝐭𝐬 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐠𝐫𝐨𝐮𝐩.
 𝐈𝐟 𝐲𝐨𝐮 𝐰𝐚𝐧𝐭 𝐭𝐨 𝐫𝐞𝐩𝐨𝐫𝐭 𝐛𝐮𝐠𝐬 𝐨𝐫 𝐡𝐚𝐯𝐞 𝐚𝐧𝐲 𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬 𝐨𝐧 𝐡𝐨𝐰 𝐭𝐨 𝐮𝐬𝐞 𝐦𝐞 𝐭𝐡𝐞𝐧 𝐟𝐞𝐞𝐥 𝐟𝐫𝐞𝐞 𝐭𝐨 𝐫𝐞𝐚𝐜𝐡 𝐨𝐮𝐭: @NobisukiSupport.
 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠: (/),(!),(?),(.),(~)[!](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
-𝐋𝐢𝐬𝐭 𝐨𝐟 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐌𝐨𝐝𝐮𝐥𝐞𝐬.
+𝐋𝐢𝐬𝐭 𝐨𝐟 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐌𝐨𝐝𝐮𝐥𝐞𝐬:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
