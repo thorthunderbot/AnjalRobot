@@ -21,7 +21,7 @@ def fun(update: Update, context: CallbackContext):
         random.choice(animequotes_strings.QUOTES_IMG))
 
 __help__ = """
- • `/fun`*:* gives random tamil memes
+ • /fun: gives random tamil memes
  
 """
 ANIMEQUOTES_HANDLER = DisableAbleCommandHandler("fun", fun)
