@@ -298,6 +298,6 @@ __help__ = """
  ❍ `/txt`: reply to text Upload telegraph.
 
 *live cricket score*
- ❍ /cs : Latest live scores from cricket info
+ ❍ `/cs`: Latest live scores from cricket info
    
 """
