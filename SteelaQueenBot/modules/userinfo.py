@@ -29,7 +29,7 @@ from SteelaQueenBot.modules.sql.afk_sql import is_afk, check_afk_status
 from SteelaQueenBot.modules.sql.users_sql import get_user_num_chats
 from SteelaQueenBot.modules.helper_funcs.chat_status import sudo_plus
 from SteelaQueenBot.modules.helper_funcs.extraction import extract_user
-from SteelaQueenBot import telethn as ZeusXRobotTelethonClient, TIGERS, DRAGONS, DEMONS
+from SteelaQueenBot import telethn as SteelaQueenBot TelethonClient, TIGERS, DRAGONS, DEMONS
 
     
 def no_by_per(totalhp, percentage):
@@ -430,7 +430,7 @@ def stats(update, context):
     uptime = datetime.datetime.fromtimestamp(boot_time()).strftime("%Y-%m-%d %H:%M:%S")
     botuptime = get_readable_time((time.time() - StartTime))
     status = "*╒═══「 📊 Anjal Stats 」*\n\n"
-    status += "*➢ Steela Start time:* " + str(uptime) + "\n"
+    status += "*➢ Anjal Start time:* " + str(uptime) + "\n"
     uname = platform.uname()
     status += "*➢ System:* " + str(uname.system) + "\n"
     status += "*➢ Node name:* " + escape_markdown(str(uname.node)) + "\n"
