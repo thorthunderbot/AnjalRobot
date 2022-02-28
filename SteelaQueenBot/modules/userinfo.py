@@ -29,7 +29,7 @@ from SteelaQueenBot.modules.sql.afk_sql import is_afk, check_afk_status
 from SteelaQueenBot.modules.sql.users_sql import get_user_num_chats
 from SteelaQueenBot.modules.helper_funcs.chat_status import sudo_plus
 from SteelaQueenBot.modules.helper_funcs.extraction import extract_user
-from SteelaQueenBot import telethn as SteelaQueenBot TelethonClient, TIGERS, DRAGONS, DEMONS
+from SteelaQueenBot import telethn as SteelaQueenBotTelethonClient, TIGERS, DRAGONS, DEMONS
 
     
 def no_by_per(totalhp, percentage):
