@@ -296,5 +296,8 @@ __help__ = """
 *Telegraph Uploader Text & 5mb (image|gif|video)*
  ❍ `/tm`: upload image or GIFs telegraph.
  ❍ `/txt`: reply to text Upload telegraph.
+
+*live cricket score*
+ ❍ /cs : Latest live scores from cricket info
    
 """
