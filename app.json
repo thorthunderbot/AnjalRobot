@@ -48,6 +48,10 @@
          "description": "Your username without the @",
          "value": "call_me_crazyboy"
       },
+      "DONATION_LINK": {
+         "description": "Optional link where you would like to receive donations. If you are a noob, better leave it linking to paul",
+         "value": "https://t.me/NobisukiSupport"
+      },
       "INFOPIC": {
          "description": "userinfo picture Show In Info.",
          "value": "True"
