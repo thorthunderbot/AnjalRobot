@@ -91,22 +91,22 @@ STICKERS = (
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/AnjalRobot?startgroup=true"),
+            text="➕️ 𝐀𝐃𝐃 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url="t.me/AnjalRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴜᴘᴅᴀᴛᴇs", url="https://t.me/PegasusUpdates"),
+        InlineKeyboardButton(text="📣 𝐔𝐏𝐃𝐀𝐓𝐄𝐒", url="https://t.me/PegasusUpdates"),
         InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url="https://t.me/NobisukiSupport"
+            text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url="https://t.me/NobisukiSupport"
         ),
     ],
     [
-        InlineKeyboardButton(text="ɴᴇᴛᴡᴏʀᴋ", url="https://t.me/Pegasus_Network"),
+        InlineKeyboardButton(text="📡 𝐍𝐄𝐓𝐖𝐎𝐑𝐊", url="https://t.me/Pegasus_Network"),
         InlineKeyboardButton(
-            text="source", url="https://Github.com/godofanjal/AnjalRobot"
+            text="💾 𝐑𝐄𝐏𝐎", url="https://Github.com/godofanjal/AnjalRobot"
         ),
     ],
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅꜱ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="🔐 𝐇𝐄𝐋𝐏 & 𝐂𝐎𝐌𝐌𝐀𝐃𝐒 🔐", callback_data="help_back"),
     ],
 ]
  
