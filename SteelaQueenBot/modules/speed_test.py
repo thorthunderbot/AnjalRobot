@@ -1,3 +1,4 @@
+import speedtest
 from SteelaQueenBot import DEV_USERS, dispatcher
 from SteelaQueenBot.modules.disable import DisableAbleCommandHandler
 from SteelaQueenBot.modules.helper_funcs.chat_status import dev_plus
