@@ -19,7 +19,7 @@ from telethon import events, Button, custom, version
 
 from SteelaQueenBot import OWNER_ID
 from SteelaQueenBot.events import register
-from MashaRoBot import telethn as tbot
+from SteelaQueenBot import telethn as tbot
 from PIL import Image, ImageDraw, ImageFont
 
 
