@@ -94,9 +94,9 @@ buttons = [
             text="➕️ 𝐀𝐃𝐃 𝐓𝐎 𝐘𝐎𝐔𝐑 𝐆𝐑𝐎𝐔𝐏 ➕️", url="t.me/AnjalRobot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="📣 𝐔𝐏𝐃𝐀𝐓𝐄𝐒", url="https://t.me/PegasusUpdates"),
+        InlineKeyboardButton(text="📣 𝐔𝐏𝐃𝐀𝐓𝐄𝐒", url="https://t.me/PegaBots"),
         InlineKeyboardButton(
-            text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url="https://t.me/NobisukiSupport"
+            text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url="https://t.me/{SUPPORT_CHAT}"
         ),
     ],
     [
