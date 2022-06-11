@@ -115,7 +115,6 @@ HELP_STRINGS = """
 𝐇𝐢 𝐭𝐡𝐞𝐫𝐞, 𝐈'𝐦 *{}*!
 𝐂𝐥𝐢𝐤𝐞 𝐁𝐞𝐥𝐨𝐰 𝐓𝐡𝐞 𝐁𝐮𝐭𝐭𝐨𝐧 𝐀𝐧𝐝 𝐆𝐞𝐭 𝐃𝐨𝐜𝐮𝐦𝐚𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐎𝐟 𝐌𝐨𝐝𝐮𝐥𝐞𝐬.[.](https://telegra.ph/file/c9ede520fffd9c7d7d695.jpg)
 𝐀𝐥𝐥 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐬 𝐜𝐚𝐧 𝐛𝐞 𝐮𝐬𝐞𝐝 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 𝐟𝐨𝐥𝐥𝐨𝐰𝐢𝐧𝐠: / or ! 𝐮𝐬𝐞
-𝐋𝐢𝐬𝐭 𝐨𝐟 𝐚𝐥𝐥 𝐭𝐡𝐞 𝐌𝐨𝐝𝐮𝐥𝐞𝐬:
 """.format(
     dispatcher.bot.first_name,
     "" if not ALLOW_EXCL else "📝All commands can either be used with / or !.",
