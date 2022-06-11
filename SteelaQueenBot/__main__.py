@@ -96,7 +96,7 @@ buttons = [
     [
         InlineKeyboardButton(text="📣 𝐔𝐏𝐃𝐀𝐓𝐄𝐒", url="https://t.me/PegaBots"),
         InlineKeyboardButton(
-            text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url="https://t.me/@{SUPPORT_CHAT}"
+            text="👥 𝐒𝐔𝐏𝐏𝐎𝐑𝐓", url="https://t.me/serena_support"
         ),
     ],
     [
@@ -245,7 +245,7 @@ def start(update: Update, context: CallbackContext):
         reply_markup=InlineKeyboardMarkup(
                 [
                   [
-                  InlineKeyboardButton(text=" Support ", url=f"t.me/NobisukiSupport"),
+                  InlineKeyboardButton(text=" Support ", url=f"t.me/serena_Support"),
                   InlineKeyboardButton(text=" Updates ", url=f"t.me/PegasusUpdates"),
                   ]
                 ]
@@ -701,7 +701,7 @@ def main():
 
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
-            dispatcher.bot.sendMessage(f"@Anjal_logs","[💖 Anjal is back to online 💖](https://telegra.ph/file/434967e94c3dda08b34ac.jpg)", parse_mode=ParseMode.MARKDOWN) 
+            dispatcher.bot.sendMessage(f"@serena_support","[💖 Anjal is back to online 💖](https://telegra.ph/file/434967e94c3dda08b34ac.jpg)", parse_mode=ParseMode.MARKDOWN) 
         except Unauthorized:
             LOGGER.warning(
                 "Bot isnt able to send message to support_chat, go and check!",
