@@ -58,12 +58,10 @@ __help__ = """
 ──「 *Owner only*: 」──
 -> `/banall`
 Ban all members from a chat
+
 ──「 *Sudo only*: 」──
 -> `/snipe` <chatid> <string>
 Make me send a message to a specific chat.
-
-──「 *Make A LOGO*: 」──
--> `/logo <text>` making your logo at 2sec.
 
 ──「 *Admin only*: 」──
 -> `/tagall` or @all
