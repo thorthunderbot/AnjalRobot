@@ -246,7 +246,7 @@ def start(update: Update, context: CallbackContext):
                 [
                   [
                   InlineKeyboardButton(text=" Support ", url=f"t.me/serena_Support"),
-                  InlineKeyboardButton(text=" Updates ", url=f"t.me/PegasusUpdates"),
+                  InlineKeyboardButton(text=" Updates ", url=f"t.me/PegaBots"),
                   ]
                 ]
             ),
