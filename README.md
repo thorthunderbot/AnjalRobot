@@ -47,7 +47,7 @@
 
 ### Support
 <p>
-<a href="https://t.me/PegasusUpdates"> <img src="https://img.shields.io/badge/Telegram-Updates-blue?&logo=telegram" alt="Updates" /> </a><br>
+<a href="https://t.me/PegaBots"> <img src="https://img.shields.io/badge/Telegram-Updates-blue?&logo=telegram" alt="Updates" /> </a><br>
 <a href="https://t.me/Serena_Support"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
 </p>
 
