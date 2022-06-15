@@ -106,7 +106,7 @@
          "value": "ANYTHING"
       },
       "WEBHOOK": {
-         "description": "Setting this to ANYTHING will enable webhooks. If you dont know how this works leave it as it is",
+         "description": "Note you can deploy after go setting and remove this otherwise bot can't work",
          "required": false,
          "value": ""
       },
