@@ -42,16 +42,16 @@
 
 
 ## Special Credits
-- ZeusXRobot - base
+- Kurumi - base
 
 
 ### Support
 <p>
 <a href="https://t.me/PegasusUpdates"> <img src="https://img.shields.io/badge/Telegram-Updates-blue?&logo=telegram" alt="Updates" /> </a><br>
-<a href="https://t.me/NobisukiSupport"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
+<a href="https://t.me/Serena_Support"> <img src="https://img.shields.io/badge/Support-Chat-blue?&logo=telegram" alt="Support Chat" /> </a><br>
 </p>
 
 ## Credit
-• [Crazy Boy](https://t.me/call_me_crazyboy)``Owner``
+• [Crazy Boy](https://t.me/itzmecrazy)``Owner``
  
 • [DeepakJack](https://t.me/DeepakJack007)``Dev``
