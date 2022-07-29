@@ -1,10 +1,14 @@
-# this docker will installed latest build version of NodeJs and Python version
-FROM nikolaik/python-nodejs:latest
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends ffmpeg \
-    && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
-COPY . /app/
-WORKDIR /app/
-RUN pip3 install -U -r Installer
-CMD python3 -m modules
+FROM nikolaik/python-nodejs:python3.9-nodejs16
+
+RUN apt update && apt upgrade -y
+RUN apt install git curl python3-pip ffmpeg -y
+
+RUN cd /
+RUN git clone https://github.com/thorthunderbot/AnjalRobot
+RUN cd AnjalRobot
+WORKDIR /AnajlRobot
+
+RUN pip3 install --upgrade pip
+RUN pip3 install -U -r requirements.txt
+
+CMD python3 main.py
